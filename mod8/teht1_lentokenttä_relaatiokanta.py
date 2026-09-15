@@ -1,20 +1,23 @@
-import _mysql_connector
+import mysql.connector
 def hakee_lentoaseman_icao(icao):   
     sql =f"SELECT name, municipality from airport where ident='{icao}'"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
-    if kursori in tulos:
-        print(kursori)
+    if kursori.rowcount > 0:
+        for kursori in tulos:
+            print("Hakemasi lento aseman lentokentän nimi on ja sijainti kunta on:")
+            print(*kursori)
             
 
 
-yhteys = _mysql_connector.connect(
+yhteys = mysql.connector.connect(
     host="127.0.0.1",
     port= 3306,
     database="flight_game",
-    user="santeri",
-    password="Ul485L",
+    user="root",
+    #en laita salasanaa näkyvillä koska se on public reposity
+    password="******",
     autocommit=True
     )
 
