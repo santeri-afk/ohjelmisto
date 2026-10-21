@@ -13,7 +13,7 @@ for _ in range(4):
     nelinumeroinen.append(a)
 
 print("kolmenumeroisen koodi")
-print(*kolmenumeroinen)
+print(kolmenumeroinen)
 
 print(" ")
 

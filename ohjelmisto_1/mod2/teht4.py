@@ -11,7 +11,7 @@ while laskuri < 3:
 
 summa = sum(luvut) 
 tulo = math.prod(luvut)
-keskiarvo = sum(luvut) / len(luvut)
+keskiarvo = sum(luvut) / len(luvut) # jakaa lukujen summan lukujen määrällä
 
 
 print(f"Summa: {summa}")
