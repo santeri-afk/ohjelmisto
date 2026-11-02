@@ -1,7 +1,7 @@
 class Hissi:
     def __init__(self, ylin=10, alin=-2):
-        self.ylin = ylin
-        self.alin = alin 
+        self.ylin_kerros = ylin
+        self.alin_kerros = alin 
         self.kerros = alin
 
     def siirry_kerrokseen(self, kohdekerros):
@@ -25,17 +25,20 @@ class Hissi:
 
 
 class Talo:
-    hissit = []
+    def __init__(self, ylin, alin, hissi):
+        self.hissit = []
     
-    def __init__(self, ylin_kerros, alin_kerros, hissi):
-        self.ylin_kerros = ylin_kerros
-        self.alin_kerros = alin_kerros
-        self.hissi = hissi
-        
+        for i in range(hissi):
+            uusi_hissi = Hissi(ylin, alin)
+            self.hissit.append(uusi_hissi)
 
     def aja_hissiä(self, hissin_numero, kohdekerros):
+        self.hissit[hissin_numero].siirry_kerrokseen(kohdekerros)
 
 
+talo = Talo(10, 1, 3)
 
-talo = Talo(10, -2, 3)
+talo.aja_hissiä(0, 5)
+talo.aja_hissiä(1, 8)
+talo.aja_hissiä(2, 3)
 
