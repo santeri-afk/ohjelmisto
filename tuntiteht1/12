@@ -1,0 +1,15 @@
+1. mikä on rajapinta
+sovittua tapaa tai yhtymäkohtaa, jonka avulla kaksi eri järjestelmää, laitetta tai ohjelmaa voivat keskustella ja vaihtaa tietoa keskenään
+
+2. mikä on palvelin
+palvelin on tietokone kytketty internettiin joka odottaa siihen kohdistuvaa yhteydenottoa
+
+3. mikä on (http-) pyyntö
+ HTTP on asiakas-palvelinmalliin perustuva sopimus siitä, miten pyynnöt lähetetään ja minkälaisina niihin saatavat vastaukset toimitetaan
+
+4. mikä on json
+JSON on JavaScript-kielen syntaksia noudattava siirtoformaattina yleisesti käytetty esitysmuoto. Käsitteellisesti se on erittäin lähellä Python-kielen sanakirjarakennetta
+
+5. mikä on http-statuskoodi
+koodi mikä kertoo mikä rajoittaa ongelman jos kone ei saa yhteyttä palvelimeen
+
