@@ -19,7 +19,7 @@ yhteys = mysql.connector.connect(
     #en laita salasanaa näkyvillä koska se on public reposity
     password="******",
     autocommit=True
-    )
+)
 
 
 
