@@ -14,7 +14,7 @@ def hakee_lentoaseman_icao(icao):
     database="flight_game",
     user="root",
     #en laita salasanaa näkyvillä koska se on public reposity
-    password="123#edcvBnmko=9",
+    password="*****",
     autocommit=True
     )
 
