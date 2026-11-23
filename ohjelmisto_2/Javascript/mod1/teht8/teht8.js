@@ -9,7 +9,6 @@ let hyppyvuodet = [];
 
 
 for (let v = year; v <= year2; v++) {
-    current++
     if (v % 4 == 0 && v % 100 != 0 || v % 400 == 0){
         hyppyvuodet.push(current);
     } else {
@@ -19,8 +18,10 @@ for (let v = year; v <= year2; v++) {
 
 let list = document.getElementById("vuodet");
 
+let yar = year
 for (let i = 1; i <= hyppyvuodet.length; i++) {
     let kohta = document.createElement("li");
-    kohta.textContent = [current];
+    kohta.textContent = [yar];
+    yar++
     list.appendChild(kohta);
 };
