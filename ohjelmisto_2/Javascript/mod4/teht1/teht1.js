@@ -7,8 +7,6 @@ const hakuelement = document.querySelector("#query");
 
 lomakelem.addEventListener('sumbit', async function (evt) {
     evt.preventdefault();
-
-
-    const hakuehto = hakuelement.value;
-    console.log("debug" + hakuehto);
+    const hakuehto = await hakuelement.json();
+    console.log(hakuehto);
 }); 
