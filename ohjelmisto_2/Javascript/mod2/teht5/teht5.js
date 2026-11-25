@@ -13,8 +13,6 @@ while (true) {
 
 numerot.sort((a,b) => a-b);
 
-let lista = document.getElementById("numerot");
-
 
 for (let i = 0; i < numerot.length; i++){
     console.log(`numero: ${numerot[i]}`);
