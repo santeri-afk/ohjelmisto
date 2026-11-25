@@ -22,6 +22,6 @@ let yar = year
 for (let i = 1; i <= hyppyvuodet.length; i++) {
     let kohta = document.createElement("li");
     kohta.textContent = [yar];
-    yar++
+    yar += 4
     list.appendChild(kohta);
 };
